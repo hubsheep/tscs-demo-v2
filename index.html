@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSCS 交通安全统筹软件 - 多端演示导航</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #0f1923; color: #e8eaed; min-height: 100vh; }
+.header { background: linear-gradient(135deg, #1a3a5c 0%, #0d2137 100%); border-bottom: 1px solid #2a4a6b; padding: 40px 20px; text-align: center; }
+.header h1 { font-size: 28px; font-weight: 600; color: #4fc3f7; margin-bottom: 8px; }
+.header p { font-size: 14px; color: #8ab4d4; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.section-title { font-size: 13px; color: #5a7a9a; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; padding-left: 4px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: #1c2d3f; border: 1px solid #2a3f55; border-radius: 12px; padding: 24px; text-decoration: none; transition: all 0.2s ease; display: block; }
+.card:hover { border-color: #4fc3f7; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(79, 195, 247, 0.15); }
+.card-icon { font-size: 32px; margin-bottom: 14px; }
+.card-title { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+.card-desc { font-size: 13px; color: #7a9ab8; line-height: 1.5; }
+.card-tag { display: inline-block; margin-top: 12px; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+.tag-blue { background: rgba(79, 195, 247, 0.15); color: #4fc3f7; }
+.tag-green { background: rgba(76, 175, 80, 0.15); color: #81c784; }
+.tag-orange { background: rgba(255, 152, 0, 0.15); color: #ffb74d; }
+.tag-purple { background: rgba(171, 71, 188, 0.15); color: #ce93d8; }
+.footer { text-align: center; padding: 40px 20px; color: #4a6a8a; font-size: 12px; }
+.footer a { color: #4fc3f7; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🚛 TSCS 交通安全统筹软件</h1>
+  <p>多端演示 Demo — 企业端 · 司机端 · 现场端 · 机构端</p>
+</div>
+<div class="container">
+
+  <div class="section-title">机构端</div>
+  <div class="grid">
+    <a class="card" href="org_demo.html">
+      <div class="card-icon">🏛️</div>
+      <div class="card-title">机构端演示</div>
+      <div class="card-desc">统筹机构管理后台，含数据面板、企业管理、案件管理、给付管理、风控预警等模块</div>
+      <span class="card-tag tag-blue">机构端</span>
+    </a>
+  </div>
+
+  <div class="section-title">企业端</div>
+  <div class="grid">
+    <a class="card" href="enterprise_web.html">
+      <div class="card-icon">💻</div>
+      <div class="card-title">企业端 Web 演示</div>
+      <div class="card-desc">运输企业 Web 管理端，蓝色主题风格，含协议管理、车辆管理、凭证查看等功能</div>
+      <span class="card-tag tag-green">企业端 · Web</span>
+    </a>
+    <a class="card" href="enterprise_app.html">
+      <div class="card-icon">📱</div>
+      <div class="card-title">企业端小程序</div>
+      <div class="card-desc">运输企业小程序端，含协议签订、车辆管理、驾驶员绑定、案件报案等流程</div>
+      <span class="card-tag tag-green">企业端 · 小程序</span>
+    </a>
+  </div>
+
+  <div class="section-title">司机端</div>
+  <div class="grid">
+    <a class="card" href="driver_app.html">
+      <div class="card-icon">🚚</div>
+      <div class="card-title">司机端小程序</div>
+      <div class="card-desc">驾驶员小程序端，含车辆绑定、统筹凭证查看、案件报案、给付查询等核心功能</div>
+      <span class="card-tag tag-orange">司机端 · 小程序</span>
+    </a>
+    <a class="card" href="driver_flow.html">
+      <div class="card-icon">🔗</div>
+      <div class="card-title">司机端报案流程图</div>
+      <div class="card-desc">驾驶员报案全流程示意，清晰展示从事故发生到给付完成的标准路径</div>
+      <span class="card-tag tag-orange">司机端 · 流程图</span>
+    </a>
+    <a class="card" href="driver_demo.html">
+      <div class="card-icon">📲</div>
+      <div class="card-title">司机端交互演示</div>
+      <div class="card-desc">司机端核心页面交互演示，含Phone Frame手机框架样式，贴近真实体验</div>
+      <span class="card-tag tag-orange">司机端 · 交互</span>
+    </a>
+    <a class="card" href="driver_full.html">
+      <div class="card-icon">🚀</div>
+      <div class="card-title">司机端全流程演示</div>
+      <div class="card-desc">司机端全流程完整演示，从注册绑定到案件报案到给付完成的端到端展示</div>
+      <span class="card-tag tag-orange">司机端 · 全流程</span>
+    </a>
+  </div>
+
+  <div class="section-title">现场端</div>
+  <div class="grid">
+    <a class="card" href="scene_app.html">
+      <div class="card-icon">📸</div>
+      <div class="card-title">现场端小程序</div>
+      <div class="card-desc">查勘现场端小程序，含现场查勘、信息采集、照片拍摄、查勘员调度等功能</div>
+      <span class="card-tag tag-purple">现场端 · 小程序</span>
+    </a>
+  </div>
+
+</div>
+<div class="footer">
+  TSCS 交通安全统筹软件 · 多端 Demo 演示 &nbsp;|&nbsp;
+  <a href="https://hubsheep.github.io/tscs-demo/" target="_blank">GitHub Pages</a>
+</div>
+</body>
+</html>
